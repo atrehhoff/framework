@@ -1,7 +1,9 @@
 # Changelog #
 v10.0.1
-- Add \Str::pos(); method
-- Rename HttpsRedirect to BaseurlRedirect
+- Added \Str::pos(); method.  
+- Rename HttpsRedirect to BaseurlRedirect.  
+- Updated typehints for class constants.  
+- Updated phpcs configuration to be compatible with newer PHP versions.  
 
 v10.0.0
 - **This release is backwards incompatible.**  
