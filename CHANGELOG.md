@@ -4,6 +4,7 @@ v10.0.1
 - Rename HttpsRedirect to BaseurlRedirect.  
 - Updated typehints for class constants.  
 - Updated phpcs configuration to be compatible with newer PHP versions.  
+- Updated documentation.  
 
 v10.0.0
 - **This release is backwards incompatible.**  
