@@ -3,10 +3,6 @@
 	<description>Framework coding standards config.</description>
 	<file>src/</file>
 
-	<!-- Requires zebra-north/phpcs-short-types -->
-	<!-- See https://github.com/ZebraNorth/phpcs-short-types#installation -->
-    <arg name="bootstrap" value="vendor/zebra-north/phpcs-short-types/short-types.php"/>
-
 	<arg name="extensions" value="php,inc" />
 	<arg name="colors" />
 
@@ -18,7 +14,8 @@
     <rule ref="Generic.NamingConventions.UpperCaseConstantName" />
 	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter" />
 	<rule ref="Generic.Commenting.Todo" />
-	<rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar" />
+
+	<rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints" />
 
 	<rule ref="Generic.PHP.ForbiddenFunctions">
 		<properties>
@@ -31,6 +28,7 @@
 		</properties>
 	</rule>
 
+	<rule ref="Squiz.Strings.DoubleQuoteUsage.ContainsVar" />
 	<rule ref="Squiz.Commenting.FunctionComment">
         <properties>
             <requireParamType>true</requireParamType>
@@ -38,9 +36,12 @@
 			<property name="skipIfInheritdoc" value="true" />
         </properties>
 
-        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentNotCapital" />
-		<exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
-        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
-		<exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" />
+		<exclude name="Squiz.Commenting.FunctionComment.ParamCommentNotCapital" />
+ 		<exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType" />
+		<exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop" />
+ 		<exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName" />
+		<!-- Allow short scalar type names (int, bool) in docblocks when using PHP 7/8 typed signatures -->
+		<exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName" />
+		<exclude name="Squiz.Commenting.FunctionComment.InvalidReturn" />
     </rule>
 </ruleset>
