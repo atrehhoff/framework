@@ -1,4 +1,8 @@
 # Changelog #
+v10.0.1
+- Add \Str::pos(); method
+- Rename HttpsRedirect to BaseurlRedirect
+
 v10.0.0
 - **This release is backwards incompatible.**  
 - Simplified \Controller constructor and dependencies.  
