@@ -2,6 +2,7 @@
 
 namespace Bootstrap;
 
+use EventListeners\BaseurlRedirect;
 use \EventListeners\HttpsRedirect;
 use \EventListeners\ContentSecurityPolicy;
 
@@ -243,7 +244,7 @@ class Bootstrap {
 	 * @return void
 	 */
 	private function registerEventListeners(): void {
-		\Core\Event::addListener("core.global.init", HttpsRedirect::class);
+		\Core\Event::addListener("core.global.init", BaseurlRedirect::class);
 		\Core\Event::addListener("core.output.html", ContentSecurityPolicy::class);
 	}
 }
