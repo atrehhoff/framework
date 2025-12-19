@@ -10,6 +10,9 @@ use Core\ContentType\ContentTypeEnum;
  */
 #[Attribute(Attribute::TARGET_CLASS | Attribute::TARGET_METHOD)]
 class RespondWith {
+	/**
+	 * @var array List of allowed content types.
+	 */
 	private array $contentTypes;
 
 	/**

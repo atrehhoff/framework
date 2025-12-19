@@ -17,7 +17,7 @@ class Debug {
 	/**
 	 * Pretty print almost any variable in a human readable format.
 	 * @param mixed $stuff A variable to debug
-	 * @param boolean $exit whether to exit the PHP process after printing debug information.
+	 * @param bool $exit whether to exit the PHP process after printing debug information.
 	 * @return void
 	 */
 	public static function pre(mixed $stuff, bool $exit = false): void {

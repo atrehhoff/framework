@@ -42,7 +42,7 @@ final class Registry {
 	 * Checks if the registry contains a given object.
 	 * 
 	 * @param string $key Check if this key/alias is available globally
-	 * @return boolean
+	 * @return bool
 	 */
 	public static function has(string $key): bool {
 		return isset(self::$store[$key]);

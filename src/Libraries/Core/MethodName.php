@@ -9,7 +9,7 @@ final class MethodName extends MVCStructure {
 	/**
 	 * @var string Default method name to be used, if a given method doesn't exist on a class.
 	 */
-	const DEFAULT = "index";
+	public const string DEFAULT = "index";
 
 	/**
 	 * @param string $string Takes a single argument as a string, this will be the method name to use.

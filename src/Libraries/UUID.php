@@ -23,42 +23,42 @@ class UUID {
 	 * @var string
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-namespace-id-usage-and-allo
 	 */
-	public const NAMESPACE_DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
+	public const string NAMESPACE_DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
 
 	/**
 	 * When this namespace is specified, the name string is a URL.
 	 * @var string
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-namespace-id-usage-and-allo
 	 */
-	public const NAMESPACE_URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
+	public const string NAMESPACE_URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
 
 	/**
 	 * When this namespace is specified, the name string is an ISO OID.
 	 * @var string
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-namespace-id-usage-and-allo
 	 */
-	public const NAMESPACE_OID = '6ba7b812-9dad-11d1-80b4-00c04fd430c8';
+	public const string NAMESPACE_OID = '6ba7b812-9dad-11d1-80b4-00c04fd430c8';
 
 	/**
 	 * When this namespace is specified, the name string is an X.500 DN in DER or a text output format.
 	 * @var string
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-namespace-id-usage-and-allo
 	 */
-	public const NAMESPACE_X500 = '6ba7b814-9dad-11d1-80b4-00c04fd430c8';
+	public const string NAMESPACE_X500 = '6ba7b814-9dad-11d1-80b4-00c04fd430c8';
 
 	/**
 	 * The nil UUID is special form of UUID that is specified to have all 128 bits set to zero.
 	 * @var string
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-nil-uuid
 	 */
-	public const NIL = '00000000-0000-0000-0000-000000000000';
+	public const string NIL = '00000000-0000-0000-0000-000000000000';
 
 	/**
 	 * The Max UUID is special form of UUID that is specified to have all 128 bits set to one.
 	 * @var string
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-max-uuid
 	 */
-	public const MAX = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
+	public const string MAX = 'FFFFFFFF-FFFF-FFFF-FFFF-FFFFFFFFFFFF';
 
 	/**
 	 * 0x01b21dd213814000 is the number of 100-ns intervals between the
@@ -66,31 +66,31 @@ class UUID {
 	 * @var int
 	 * @link https://www.rfc-editor.org/rfc/rfc9562.html#name-test-vectors
 	 */
-	public const TIME_OFFSET_INT = 0x01b21dd213814000;
+	public const int TIME_OFFSET_INT = 0x01b21dd213814000;
 
 	/** @internal */
-	private const SUBSEC_RANGE = 10_000_000;
+	private const int SUBSEC_RANGE = 10_000_000;
 
 	/** @internal */
-	private const V7_SUBSEC_RANGE = 10_000;
+	private const int V7_SUBSEC_RANGE = 10_000;
 
 	/** @internal */
-	private const V8_SUBSEC_RANGE = 10_000;
+	private const int V8_SUBSEC_RANGE = 10_000;
 
 	/** @internal */
-	private const V8_SUBSEC_BITS = 14;
+	private const int V8_SUBSEC_BITS = 14;
 
 	/** @internal */
-	private const UUID_REGEX = '/^(?:urn:)?(?:uuid:)?(\{)?([0-9a-f]{8})\-?([0-9a-f]{4})\-?([0-9a-f]{4})\-?([0-9a-f]{4})\-?([0-9a-f]{12})(?(1)\}|)$/i';
+	private const string UUID_REGEX = '/^(?:urn:)?(?:uuid:)?(\{)?([0-9a-f]{8})\-?([0-9a-f]{4})\-?([0-9a-f]{4})\-?([0-9a-f]{4})\-?([0-9a-f]{12})(?(1)\}|)$/i';
 
 	/** @internal */
-	private static $unixts = 0;
+	private static int $unixts = 0;
 
 	/** @internal */
-	private static $subsec = 0;
+	private static int $subsec = 0;
 
 	/** @internal */
-	private static $unixtsMs = 0;
+	private static int $unixtsMs = 0;
 
 	/**
 	 * @internal
@@ -207,7 +207,7 @@ class UUID {
 	 * Check if a string is a valid UUID.
 	 *
 	 * @param string $uuid The string UUID to test
-	 * @return boolean Returns `true` if uuid is valid, `false` otherwise
+	 * @return bool Returns `true` if uuid is valid, `false` otherwise
 	 */
 	public static function isValid(string $uuid): bool {
 		return preg_match(self::UUID_REGEX, $uuid) === 1;
@@ -218,7 +218,7 @@ class UUID {
 	 *
 	 * @param string $uuid1 The first UUID to test
 	 * @param string $uuid2 The second UUID to test
-	 * @return boolean Returns `true` if uuid1 is equal to uuid2, `false` otherwise
+	 * @return bool Returns `true` if uuid1 is equal to uuid2, `false` otherwise
 	 */
 	public static function equals(string $uuid1, string $uuid2): bool {
 		return self::stripExtras($uuid1) === self::stripExtras($uuid2);

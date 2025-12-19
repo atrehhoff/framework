@@ -13,7 +13,7 @@ namespace Database;
  * Base connection class
  */
 class Connection {
-	/** @var boolean True if a transaction has started, false otherwise. */
+	/** @var bool True if a transaction has started, false otherwise. */
 	protected bool $transactionStarted = false;
 
 	/** @var object The singleton instances of the this class. */
@@ -166,7 +166,7 @@ class Connection {
 	/**
 	 * Turns off autocommit mode. Until changes made to the database are committed.
 	 *
-	 * @return boolean
+	 * @return bool
 	 * @since 2.4
 	 */
 	public function beginTransaction(): bool {
@@ -177,7 +177,7 @@ class Connection {
 	 * Helping wrapper function for PDO::beginTranstion();
 	 *
 	 * @see \Database\Connection::beginTransaction() to start a transaction
-	 * @return boolean
+	 * @return bool
 	 * @since 1.3
 	 */
 	public function transaction(): bool {
@@ -188,7 +188,7 @@ class Connection {
 	 * Commits a transaction, returning the database connection to autocommit mode.
 	 *
 	 * @throws \RuntimeException On failure to commit the query.
-	 * @return boolean
+	 * @return bool
 	 * @since 1.3
 	 */
 	public function commit(): bool {
@@ -203,7 +203,7 @@ class Connection {
 	 * Rolls back the current transaction
 	 *
 	 * @throws \RuntimeException When attempting a rollback while not in a transaction.
-	 * @return boolean
+	 * @return bool
 	 * @since 1.3
 	 */
 	public function rollback(): bool {
