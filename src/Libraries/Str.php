@@ -86,6 +86,20 @@ class Str {
 	}
 
 	/**
+	 * Null aware multibyte position of first occurrence of a substring in a string.
+	 *
+	 * @param null|string $haystack The string to search in.
+	 * @param null|string $needle The substring to search for.
+	 * @param int $offset The search offset.
+	 * @param null|string $encoding The character encoding. If omitted, internal encoding is used.
+	 * @return int|false The position of where the needle exists relative to the beginning of the haystack string (first character is 0), or false if not found or if either argument is null.
+	 */
+	public static function pos(null|string $haystack, null|string $needle, int $offset = 0, null|string $encoding = null): int|false {
+		if ($haystack === null || $needle === null) return false;
+		return mb_strpos($haystack, $needle, $offset, $encoding ?: mb_internal_encoding());
+	}
+
+	/**
 	 * Capitalize the first letter of a string (multibyte safe).
 	 *
 	 * @param null|string $string The string to capitalize.
