@@ -1,8 +1,8 @@
 ## Templates and theming
 > [!WARNING]
-> This documentation only applies to version prior to v10
-> v10 and beyond does not support different themes
-> Feature was removed due to low use.
+> This documentation only applies to version prior to v10.  
+> v10 and beyond does not support different themes.  
+> Feature was removed due to low interest.  
 > Documentation is kept for backwards compatibility.
 
 > [!IMPORTANT] 

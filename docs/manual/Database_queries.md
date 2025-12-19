@@ -92,8 +92,8 @@ Delete **all** rows.
 For easier data manipulation, data objects should extend the **\Database\Entity** class.  
 Every class that extends **\Database\Entity** must implement the following methods.  
 
-- getTableName(); // Table in which this data object should store data.  
-- getKeyField(); // The primary key of the table in which this object stores data.  
+- getTableName(): string; // Table in which this data object should store data.  
+- getKeyField(): string; // The primary key of the table in which this object stores data.  
 
 Every data object take an optional parameter [(int) primary_key] upon instantiating,  
 identifying whether a new data object should be instantiated or an already existing row should be loaded from the table.  
@@ -454,4 +454,5 @@ $endangeredNames = $animals
     ->map(fn($name) => strtoupper($name));
 ```
 
-The Collection class provides a fluent interface for working with sets of database results or any array of objects. All transformation methods (filter, map, slice, etc.) return new Collection instances, making them safe for chaining without modifying the original collection.
+The Collection class provides an interface for working with sets of database results or any array of objects.  
+All transformation methods (filter, map, slice, etc.) return a new Collection instance.  

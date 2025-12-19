@@ -32,8 +32,8 @@ Example:
 ```php
 <?php
 	// Assume \User extends \Database\Entity
-	\Registry::set(new \Entities\User($userID), "user");
+	\Registry::set(new \User($userID), "user");
 
-	// Will restrieve the instance of \Entities\User
+	// Will restrieve the instance of \User
 	print \Registry::get("user");
 ```

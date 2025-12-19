@@ -61,6 +61,11 @@ or throw a `\Core\HttpError\Forbidden` to reroute to **ForbiddenController**.
 
 ## Namespaced Controllers
 
+> [!NOTE]
+> Namespaced controllers are not routeable.  
+> Meaning they will become inaccessible by URL and CLI.  
+
+
 Controllers can be namespaced for partials and complex structures.  
 For example, you can use namespaces like `Partial` or `StatusCode`:
 
