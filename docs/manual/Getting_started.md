@@ -36,7 +36,7 @@ http {
 }
 ```
 
-**Caddy**
+**Caddy**  
 Your `Caddyfile` file may include the following.
 Change port numbers accordingly.  
 
