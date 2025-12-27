@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
             <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/template.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-highlight/prism-line-highlight.css">
                 <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
         <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="js/template.js"></script>
         <script src="js/search.js"></script>
         <script defer src="js/searchIndex.js"></script>
     </head>
@@ -52,8 +53,8 @@
 <label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
     Menu
 </label>
-<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
-                    <section class="phpdocumentor-sidebar__category">
+<aside class="phpdocumentor-column -three phpdocumentor-sidebar">
+                    <section class="phpdocumentor-sidebar__category -namespaces">
             <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="namespaces/partial.html" class="">Partial</a>
@@ -112,7 +113,7 @@
 </h4>
 
                         </section>
-                <section class="phpdocumentor-sidebar__category">
+                <section class="phpdocumentor-sidebar__category -packages">
             <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
                                     <h4 class="phpdocumentor-sidebar__root-namespace">
     <a href="packages/Application.html" class="-active">Application</a>
@@ -134,167 +135,205 @@
 
                         </section>
             
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -reports">
         <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
                 <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
     </section>
 
-    <section class="phpdocumentor-sidebar__category">
+    <section class="phpdocumentor-sidebar__category -indices">
         <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
         <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
     </section>
 </aside>
 
-            <div class="phpdocumentor-column -eight phpdocumentor-content">
-                    <ul class="phpdocumentor-breadcrumbs">
+            <div class="phpdocumentor-column -nine phpdocumentor-content">
+                                <section>
+                                        <ul class="phpdocumentor-breadcrumbs">
     </ul>
 
     <article class="phpdocumentor-element -package">
         <h2 class="phpdocumentor-content__title">Application</h2>
 
         
+<h3 id="toc">
+    Table of Contents
+    <a href="packages/Application.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
-<h3 id="interfaces_class_traits">
-    Interfaces, Classes, Traits and Enums
-    <a href="#interfaces_class_traits" class="headerlink"><i class="fas fa-link"></i></a>
 </h3>
 
-<dl class="phpdocumentor-table-of-contents">
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Core-StatusCode-StatusCode.html"><abbr title="\Core\StatusCode\StatusCode">StatusCode</abbr></a></dt>
-        <dd>The base class for all HTTP exceptions to extend upon
+
+
+    <h4 id="toc-interfaces">
+        Interfaces
+        <a href="packages/Application.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Core-ContentType-ContentTypeInterface.html"><abbr title="\Core\ContentType\ContentTypeInterface">ContentTypeInterface</abbr></a></dt><dd>Interface ContentType</dd>            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Core-StatusCode-StatusCode.html"><abbr title="\Core\StatusCode\StatusCode">StatusCode</abbr></a></dt><dd>The base class for all HTTP exceptions to extend upon
 This class is intentionally abstract
 As it should not be instantiated directly
 and only serves as a catch-all class for
-all http error exceptions extending this</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -interface"><a href="classes/Core-ContentType-ContentTypeInterface.html"><abbr title="\Core\ContentType\ContentTypeInterface">ContentTypeInterface</abbr></a></dt>
-        <dd>Interface ContentType</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/CliController.html"><abbr title="\CliController">CliController</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IndexController.html"><abbr title="\IndexController">IndexController</abbr></a></dt>
-        <dd>This is the frontpage (index) specific controller, use it as your boilerplate for other controllers.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Bootstrap-Bootstrap.html"><abbr title="\Bootstrap\Bootstrap">Bootstrap</abbr></a></dt>
-        <dd>Class Bootstrap</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Configuration.html"><abbr title="\Configuration">Configuration</abbr></a></dt>
-        <dd>Parses a JSONC file, and lets you access properties using a dot syntax
-also supports .jsonc files</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Console.html"><abbr title="\Console">Console</abbr></a></dt>
-        <dd>Common useful tools for command line operations</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Controller.html"><abbr title="\Controller">Controller</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Application.html"><abbr title="\Core\Application">Application</abbr></a></dt>
-        <dd>The main class for this application.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Assets.html"><abbr title="\Core\Assets">Assets</abbr></a></dt>
-        <dd>Central class for handling javascripts and stylesheets to be rendered.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ClassName.html"><abbr title="\Core\ClassName">ClassName</abbr></a></dt>
-        <dd>Sanitizes and validates a controller class name is valid for use.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Html.html"><abbr title="\Core\ContentType\Html">Html</abbr></a></dt>
-        <dd>Class Core\Output\Html</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Json.html"><abbr title="\Core\ContentType\Json">Json</abbr></a></dt>
-        <dd>Class Core\ContentType\Json</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Xml.html"><abbr title="\Core\ContentType\Xml">Xml</abbr></a></dt>
-        <dd>Class Core\ContentType\Json</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Event.html"><abbr title="\Core\Event">Event</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Exception-FileNotFound.html"><abbr title="\Core\Exception\FileNotFound">FileNotFound</abbr></a></dt>
-        <dd>FileNotFound is thrown when core is missing a required file.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Exception-Governance.html"><abbr title="\Core\Exception\Governance">Governance</abbr></a></dt>
-        <dd>\Core\Exception\Governance is raised when something should not be done
-You should rarely have the need for catching this.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-MethodName.html"><abbr title="\Core\MethodName">MethodName</abbr></a></dt>
-        <dd>Sanitizes a string to a valid callable method name</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-MVCStructure.html"><abbr title="\Core\MVCStructure">MVCStructure</abbr></a></dt>
-        <dd>Extended by \Core\ClassName and \Core\MethodName</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Renderer.html"><abbr title="\Core\Renderer">Renderer</abbr></a></dt>
-        <dd>Class Renderer</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Request.html"><abbr title="\Core\Request">Request</abbr></a></dt>
-        <dd>Encapsulates the details of a request and simplifies the process of working with incoming HTTP requests.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Response.html"><abbr title="\Core\Response">Response</abbr></a></dt>
-        <dd>Class Response</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Router.html"><abbr title="\Core\Router">Router</abbr></a></dt>
-        <dd>Basic router for handling HTTP requests and routing them to appropriate controllers
-Follows a simple routing mechanism to match URLs and execute the corresponding controller for each route.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-StatusCode-Forbidden.html"><abbr title="\Core\StatusCode\Forbidden">Forbidden</abbr></a></dt>
-        <dd>Throw this whenever you want to redirect the current controller to a &quot;forbidden&quot; controller</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-StatusCode-NotFound.html"><abbr title="\Core\StatusCode\NotFound">NotFound</abbr></a></dt>
-        <dd>Throw this whenever you want to redirect the current controller to a not found controller</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Template.html"><abbr title="\Core\Template">Template</abbr></a></dt>
-        <dd>Loads and setups the current configured theme in use.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-Connection.html"><abbr title="\Database\Connection">Connection</abbr></a></dt>
-        <dd>Base connection class</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-Entity.html"><abbr title="\Database\Entity">Entity</abbr></a></dt>
-        <dd>Represents a CRUD&#039;able entity.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-EntityType.html"><abbr title="\Database\EntityType">EntityType</abbr></a></dt>
-        <dd>Class EntityType</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-Statement.html"><abbr title="\Database\Statement">Statement</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Debug.html"><abbr title="\Debug">Debug</abbr></a></dt>
-        <dd>Put whatever helper functions you may need in this class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Environment.html"><abbr title="\Environment">Environment</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/EventListeners-HttpsRedirect.html"><abbr title="\EventListeners\HttpsRedirect">HttpsRedirect</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Logger.html"><abbr title="\Logger">Logger</abbr></a></dt>
-        <dd>Simple logger class.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Registry.html"><abbr title="\Registry">Registry</abbr></a></dt>
-        <dd>Class used to hold global state objects.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Str.html"><abbr title="\Str">Str</abbr></a></dt>
-        <dd>The Str class provides string manipulation methods.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Url.html"><abbr title="\Url">Url</abbr></a></dt>
-        <dd>This class provides utility methods for working with URLs,
-such as parsing and manipulating URL components.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Negotiator.html"><abbr title="\Core\ContentType\Negotiator">Negotiator</abbr></a></dt>
-        <dd>Handles the negotiation of content types between request headers,
-application configuration, controller/class and method attributes.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arr.html"><abbr title="\Arr">Arr</abbr></a></dt>
-        <dd>Class Arr
-A collection of null-aware array utility functions.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-StatusCode-NotAcceptable.html"><abbr title="\Core\StatusCode\NotAcceptable">NotAcceptable</abbr></a></dt>
-        <dd>Throw this whenever you want to redirect the current controller to a &quot;forbidden&quot; controller</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Obj.html"><abbr title="\Obj">Obj</abbr></a></dt>
-        <dd>Class Obj</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Path.html"><abbr title="\Path">Path</abbr></a></dt>
-        <dd>Class Path</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/UUID.html"><abbr title="\UUID">UUID</abbr></a></dt>
-        <dd>Represents a universally unique identifier (UUID), according to RFC 9562.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Partial-FooterController.html"><abbr title="\Partial\FooterController">FooterController</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Partial-HeaderController.html"><abbr title="\Partial\HeaderController">HeaderController</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/StatusCode-ForbiddenController.html"><abbr title="\StatusCode\ForbiddenController">ForbiddenController</abbr></a></dt>
-        <dd>Controller for paths that is inaccessible in the current environment.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/StatusCode-NotAcceptableController.html"><abbr title="\StatusCode\NotAcceptableController">NotAcceptableController</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/StatusCode-NotFoundController.html"><abbr title="\StatusCode\NotFoundController">NotFoundController</abbr></a></dt>
-        <dd>Controller for paths that either cannot be routed.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/ContentSecurityPolicy-Builder.html"><abbr title="\ContentSecurityPolicy\Builder">Builder</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-EntityCache.html"><abbr title="\Database\EntityCache">EntityCache</abbr></a></dt>
-        <dd>Handles caching of entity instances</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/EventListeners-ContentSecurityPolicy.html"><abbr title="\EventListeners\ContentSecurityPolicy">ContentSecurityPolicy</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Attributes-RespondWith.html"><abbr title="\Core\Attributes\RespondWith">RespondWith</abbr></a></dt>
-        <dd>Attribute for specifying allowed content types for controllers or methods.</dd>
-            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Context.html"><abbr title="\Core\Context">Context</abbr></a></dt>
-        <dd>Holds information about the current state of the application
-Such as the dispatched controller class and method name.</dd>
-    
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Database-PrimaryKey-UuidV4.html"><abbr title="\Database\PrimaryKey\UuidV4">UuidV4</abbr></a></dt>
-        <dd></dd>
-            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Database-PrimaryKey-UuidV7.html"><abbr title="\Database\PrimaryKey\UuidV7">UuidV7</abbr></a></dt>
-        <dd></dd>
-    
-    </dl>
+all http error exceptions extending this</dd>    </dl>
+
+    <h4 id="toc-classes">
+        Classes
+        <a href="packages/Application.html#toc-classes" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+                    <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/CliController.html"><abbr title="\CliController">CliController</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/IndexController.html"><abbr title="\IndexController">IndexController</abbr></a></dt><dd>This is the frontpage (index) specific controller, use it as your boilerplate for other controllers.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Partial-FooterController.html"><abbr title="\Partial\FooterController">FooterController</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Partial-HeaderController.html"><abbr title="\Partial\HeaderController">HeaderController</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/StatusCode-ForbiddenController.html"><abbr title="\StatusCode\ForbiddenController">ForbiddenController</abbr></a></dt><dd>Controller for paths that is inaccessible in the current environment.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/StatusCode-NotAcceptableController.html"><abbr title="\StatusCode\NotAcceptableController">NotAcceptableController</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/StatusCode-NotFoundController.html"><abbr title="\StatusCode\NotFoundController">NotFoundController</abbr></a></dt><dd>Controller for paths that either cannot be routed.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Arr.html"><abbr title="\Arr">Arr</abbr></a></dt><dd>Class Arr
+A collection of null-aware array utility functions.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Bootstrap-Bootstrap.html"><abbr title="\Bootstrap\Bootstrap">Bootstrap</abbr></a></dt><dd>Class Bootstrap</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Configuration.html"><abbr title="\Configuration">Configuration</abbr></a></dt><dd>Parses a JSONC file, and lets you access properties using a dot syntax
+also supports .jsonc files</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Console.html"><abbr title="\Console">Console</abbr></a></dt><dd>Common useful tools for command line operations</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/ContentSecurityPolicy-Builder.html"><abbr title="\ContentSecurityPolicy\Builder">Builder</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Controller.html"><abbr title="\Controller">Controller</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Application.html"><abbr title="\Core\Application">Application</abbr></a></dt><dd>The main class for this application.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Assets.html"><abbr title="\Core\Assets">Assets</abbr></a></dt><dd>Central class for handling javascripts and stylesheets to be rendered.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Attributes-RespondWith.html"><abbr title="\Core\Attributes\RespondWith">RespondWith</abbr></a></dt><dd>Attribute for specifying allowed content types for controllers or methods.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ClassName.html"><abbr title="\Core\ClassName">ClassName</abbr></a></dt><dd>Sanitizes and validates a controller class name is valid for use.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Html.html"><abbr title="\Core\ContentType\Html">Html</abbr></a></dt><dd>Class Core\Output\Html</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Json.html"><abbr title="\Core\ContentType\Json">Json</abbr></a></dt><dd>Class Core\ContentType\Json</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Negotiator.html"><abbr title="\Core\ContentType\Negotiator">Negotiator</abbr></a></dt><dd>Handles the negotiation of content types between request headers,
+application configuration, controller/class and method attributes.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-ContentType-Xml.html"><abbr title="\Core\ContentType\Xml">Xml</abbr></a></dt><dd>Class Core\ContentType\Json</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Event.html"><abbr title="\Core\Event">Event</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Exception-FileNotFound.html"><abbr title="\Core\Exception\FileNotFound">FileNotFound</abbr></a></dt><dd>FileNotFound is thrown when core is missing a required file.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Exception-Governance.html"><abbr title="\Core\Exception\Governance">Governance</abbr></a></dt><dd>\Core\Exception\Governance is raised when something should not be done
+You should rarely have the need for catching this.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-MethodName.html"><abbr title="\Core\MethodName">MethodName</abbr></a></dt><dd>Sanitizes a string to a valid callable method name</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-MVCStructure.html"><abbr title="\Core\MVCStructure">MVCStructure</abbr></a></dt><dd>Extended by \Core\ClassName and \Core\MethodName</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Renderer.html"><abbr title="\Core\Renderer">Renderer</abbr></a></dt><dd>Class Renderer</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Request.html"><abbr title="\Core\Request">Request</abbr></a></dt><dd>Encapsulates the details of a request and simplifies the process of working with incoming HTTP requests.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Response.html"><abbr title="\Core\Response">Response</abbr></a></dt><dd>Class Response</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Router.html"><abbr title="\Core\Router">Router</abbr></a></dt><dd>Basic router for handling HTTP requests and routing them to appropriate controllers
+Follows a simple routing mechanism to match URLs and execute the corresponding controller for each route.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-StatusCode-Forbidden.html"><abbr title="\Core\StatusCode\Forbidden">Forbidden</abbr></a></dt><dd>Throw this whenever you want to redirect the current controller to a &quot;forbidden&quot; controller</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-StatusCode-NotAcceptable.html"><abbr title="\Core\StatusCode\NotAcceptable">NotAcceptable</abbr></a></dt><dd>Throw this whenever you want to redirect the current controller to a &quot;forbidden&quot; controller</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-StatusCode-NotFound.html"><abbr title="\Core\StatusCode\NotFound">NotFound</abbr></a></dt><dd>Throw this whenever you want to redirect the current controller to a not found controller</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Core-Template.html"><abbr title="\Core\Template">Template</abbr></a></dt><dd>Loads and setups the current configured theme in use.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-Connection.html"><abbr title="\Database\Connection">Connection</abbr></a></dt><dd>Base connection class</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-Entity.html"><abbr title="\Database\Entity">Entity</abbr></a></dt><dd>Represents a CRUD&#039;able entity.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-EntityCache.html"><abbr title="\Database\EntityCache">EntityCache</abbr></a></dt><dd>Handles caching of entity instances</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-EntityType.html"><abbr title="\Database\EntityType">EntityType</abbr></a></dt><dd>Class EntityType</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Database-Statement.html"><abbr title="\Database\Statement">Statement</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Debug.html"><abbr title="\Debug">Debug</abbr></a></dt><dd>Put whatever helper functions you may need in this class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Environment.html"><abbr title="\Environment">Environment</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/EventListeners-BaseurlRedirect.html"><abbr title="\EventListeners\BaseurlRedirect">BaseurlRedirect</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/EventListeners-ContentSecurityPolicy.html"><abbr title="\EventListeners\ContentSecurityPolicy">ContentSecurityPolicy</abbr></a></dt>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Logger.html"><abbr title="\Logger">Logger</abbr></a></dt><dd>Simple logger class.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Obj.html"><abbr title="\Obj">Obj</abbr></a></dt><dd>Class Obj</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Path.html"><abbr title="\Path">Path</abbr></a></dt><dd>Class Path</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Registry.html"><abbr title="\Registry">Registry</abbr></a></dt><dd>Class used to hold global state objects.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Str.html"><abbr title="\Str">Str</abbr></a></dt><dd>The Str class provides string manipulation methods.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/Url.html"><abbr title="\Url">Url</abbr></a></dt><dd>This class provides utility methods for working with URLs,
+such as parsing and manipulating URL components.</dd>            <dt class="phpdocumentor-table-of-contents__entry -class"><a href="classes/UUID.html"><abbr title="\UUID">UUID</abbr></a></dt><dd>Represents a universally unique identifier (UUID), according to RFC 9562.</dd>    </dl>
+
+    <h4 id="toc-traits">
+        Traits
+        <a href="packages/Application.html#toc-traits" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Database-PrimaryKey-UuidV4.html"><abbr title="\Database\PrimaryKey\UuidV4">UuidV4</abbr></a></dt>        <dt class="phpdocumentor-table-of-contents__entry -trait"><a href="classes/Database-PrimaryKey-UuidV7.html"><abbr title="\Database\PrimaryKey\UuidV7">UuidV7</abbr></a></dt>    </dl>
+
+    <h4 id="toc-enums">
+        Enums
+        <a href="packages/Application.html#toc-enums" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <dl class="phpdocumentor-table-of-contents">
+            <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Core-ContentType-ContentTypeEnum.html"><abbr title="\Core\ContentType\ContentTypeEnum">ContentTypeEnum</abbr></a></dt><dd>Enum representing different content types.</dd>        <dt class="phpdocumentor-table-of-contents__entry -enum"><a href="classes/Http-Method.html"><abbr title="\Http\Method">Method</abbr></a></dt></dl>
+
+
+
 
 
 
         
 
         
+        <div class="phpdocumentor-modal" id="source-view">
+    <div class="phpdocumentor-modal-bg" data-exit-button></div>
+    <div class="phpdocumentor-modal-container">
+        <div class="phpdocumentor-modal-content">
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="" class="language-php line-numbers linkable-line-numbers"></pre>
+        </div>
+        <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        (function () {
+            function loadExternalCodeSnippet(el, url, line) {
+                Array.prototype.slice.call(el.querySelectorAll('pre[data-src]')).forEach((pre) => {
+                    const src = url || pre.getAttribute('data-src').replace(/\\/g, '/');
+                    const language = 'php';
+
+                    const code = document.createElement('code');
+                    code.className = 'language-' + language;
+                    pre.textContent = '';
+                    pre.setAttribute('data-line', line)
+                    code.textContent = 'Loading…';
+                    pre.appendChild(code);
+
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET', src, true);
+
+                    xhr.onreadystatechange = function () {
+                        if (xhr.readyState !== 4) {
+                            return;
+                        }
+
+                        if (xhr.status < 400 && xhr.responseText) {
+                            code.textContent = xhr.responseText;
+                            Prism.highlightElement(code);
+                            d=document.getElementsByClassName("line-numbers");
+                            d[0].scrollTop = d[0].children[1].offsetTop;
+                            return;
+                        }
+
+                        if (xhr.status === 404) {
+                            code.textContent = '✖ Error: File could not be found';
+                            return;
+                        }
+
+                        if (xhr.status >= 400) {
+                            code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                            return;
+                        }
+
+                        code.textContent = '✖ Error: An unknown error occurred';
+                    };
+
+                    xhr.send(null);
+                });
+            }
+
+            const modalButtons = document.querySelectorAll("[data-modal]");
+            const openedAsLocalFile = window.location.protocol === 'file:';
+            if (modalButtons.length > 0 && openedAsLocalFile) {
+                console.warn(
+                    'Viewing the source code is unavailable because you are opening this page from the file:// scheme; ' +
+                    'browsers block XHR requests when a page is opened this way'
+                );
+            }
+
+            modalButtons.forEach(function (trigger) {
+                if (openedAsLocalFile) {
+                    trigger.setAttribute("hidden", "hidden");
+                }
+
+                trigger.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const modal = document.getElementById(trigger.dataset.modal);
+                    if (!modal) {
+                        console.error(`Modal with id "${trigger.dataset.modal}" could not be found`);
+                        return;
+                    }
+                    modal.classList.add("phpdocumentor-modal__open");
+
+                    loadExternalCodeSnippet(modal, trigger.dataset.src || null, trigger.dataset.line)
+                    const exits = modal.querySelectorAll("[data-exit-button]");
+                    exits.forEach(function (exit) {
+                        exit.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            modal.classList.remove("phpdocumentor-modal__open");
+                        });
+                    });
+                });
+            });
+        })();
+    </script>
+
     </article>
-                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+                                </section>
+                <section class="phpdocumentor-on-this-page__sidebar">
+                            
+    <section class="phpdocumentor-on-this-page__content">
+        <strong class="phpdocumentor-on-this-page__title">On this page</strong>
+
+        <ul class="phpdocumentor-list -clean">
+            <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
+            <li>
+                <ul class="phpdocumentor-list -clean">
+                                                                                    <li><a href="packages/Application.html#toc-interfaces">Interfaces</a></li>
+                                                                <li><a href="packages/Application.html#toc-classes">Classes</a></li>
+                                                                <li><a href="packages/Application.html#toc-traits">Traits</a></li>
+                                                                <li><a href="packages/Application.html#toc-enums">Enums</a></li>
+                                                                            </ul>
+            </li>
+
+            
+                    </ul>
+    </section>
+
+                </section>
+                            </div>
+            <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
     <section class="phpdocumentor-search-results__dialog">
         <header class="phpdocumentor-search-results__header">
             <h2 class="phpdocumentor-search-results__title">Search results</h2>
@@ -305,7 +344,6 @@ Such as the dispatched controller class and method name.</dd>
         </section>
     </section>
 </section>
-            </div>
         </div>
         <a href="packages/Application.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 

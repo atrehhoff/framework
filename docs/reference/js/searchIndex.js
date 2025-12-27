@@ -11,6 +11,36 @@ Search.appendIndex(
             "summary": "This\u0020is\u0020the\u0020frontpage\u0020\u0028index\u0029\u0020specific\u0020controller,\u0020use\u0020it\u0020as\u0020your\u0020boilerplate\u0020for\u0020other\u0020controllers.",
             "url": "classes/IndexController.html"
         },                {
+            "fqsen": "\\Partial\\FooterController",
+            "name": "FooterController",
+            "summary": "",
+            "url": "classes/Partial-FooterController.html"
+        },                {
+            "fqsen": "\\Partial\\HeaderController",
+            "name": "HeaderController",
+            "summary": "",
+            "url": "classes/Partial-HeaderController.html"
+        },                {
+            "fqsen": "\\StatusCode\\ForbiddenController",
+            "name": "ForbiddenController",
+            "summary": "Controller\u0020for\u0020paths\u0020that\u0020is\u0020inaccessible\u0020in\u0020the\u0020current\u0020environment.",
+            "url": "classes/StatusCode-ForbiddenController.html"
+        },                {
+            "fqsen": "\\StatusCode\\NotAcceptableController",
+            "name": "NotAcceptableController",
+            "summary": "",
+            "url": "classes/StatusCode-NotAcceptableController.html"
+        },                {
+            "fqsen": "\\StatusCode\\NotFoundController",
+            "name": "NotFoundController",
+            "summary": "Controller\u0020for\u0020paths\u0020that\u0020either\u0020cannot\u0020be\u0020routed.",
+            "url": "classes/StatusCode-NotFoundController.html"
+        },                {
+            "fqsen": "\\Arr",
+            "name": "Arr",
+            "summary": "Class\u0020Arr\nA\u0020collection\u0020of\u0020null\u002Daware\u0020array\u0020utility\u0020functions.",
+            "url": "classes/Arr.html"
+        },                {
             "fqsen": "\\Bootstrap\\Bootstrap",
             "name": "Bootstrap",
             "summary": "Class\u0020Bootstrap",
@@ -25,6 +55,11 @@ Search.appendIndex(
             "name": "Console",
             "summary": "Common\u0020useful\u0020tools\u0020for\u0020command\u0020line\u0020operations",
             "url": "classes/Console.html"
+        },                {
+            "fqsen": "\\ContentSecurityPolicy\\Builder",
+            "name": "Builder",
+            "summary": "",
+            "url": "classes/ContentSecurityPolicy-Builder.html"
         },                {
             "fqsen": "\\Controller",
             "name": "Controller",
@@ -41,10 +76,40 @@ Search.appendIndex(
             "summary": "Central\u0020class\u0020for\u0020handling\u0020javascripts\u0020and\u0020stylesheets\u0020to\u0020be\u0020rendered.",
             "url": "classes/Core-Assets.html"
         },                {
+            "fqsen": "\\Core\\Attributes\\RespondWith",
+            "name": "RespondWith",
+            "summary": "Attribute\u0020for\u0020specifying\u0020allowed\u0020content\u0020types\u0020for\u0020controllers\u0020or\u0020methods.",
+            "url": "classes/Core-Attributes-RespondWith.html"
+        },                {
             "fqsen": "\\Core\\ClassName",
             "name": "ClassName",
             "summary": "Sanitizes\u0020and\u0020validates\u0020a\u0020controller\u0020class\u0020name\u0020is\u0020valid\u0020for\u0020use.",
             "url": "classes/Core-ClassName.html"
+        },                {
+            "fqsen": "\\Core\\ContentType\\ContentTypeEnum",
+            "name": "ContentTypeEnum",
+            "summary": "Enum\u0020representing\u0020different\u0020content\u0020types.",
+            "url": "classes/Core-ContentType-ContentTypeEnum.html"
+        },                {
+            "fqsen": "\\Core\\ContentType\\ContentTypeEnum\u003A\u003AHTML",
+            "name": "HTML",
+            "summary": "",
+            "url": "classes/Core-ContentType-ContentTypeEnum.html#enumcase_HTML"
+        },                {
+            "fqsen": "\\Core\\ContentType\\ContentTypeEnum\u003A\u003AXML",
+            "name": "XML",
+            "summary": "",
+            "url": "classes/Core-ContentType-ContentTypeEnum.html#enumcase_XML"
+        },                {
+            "fqsen": "\\Core\\ContentType\\ContentTypeEnum\u003A\u003AJSON",
+            "name": "JSON",
+            "summary": "",
+            "url": "classes/Core-ContentType-ContentTypeEnum.html#enumcase_JSON"
+        },                {
+            "fqsen": "\\Core\\ContentType\\ContentTypeInterface",
+            "name": "ContentTypeInterface",
+            "summary": "Interface\u0020ContentType",
+            "url": "classes/Core-ContentType-ContentTypeInterface.html"
         },                {
             "fqsen": "\\Core\\ContentType\\Html",
             "name": "Html",
@@ -55,6 +120,11 @@ Search.appendIndex(
             "name": "Json",
             "summary": "Class\u0020Core\\ContentType\\Json",
             "url": "classes/Core-ContentType-Json.html"
+        },                {
+            "fqsen": "\\Core\\ContentType\\Negotiator",
+            "name": "Negotiator",
+            "summary": "Handles\u0020the\u0020negotiation\u0020of\u0020content\u0020types\u0020between\u0020request\u0020headers,\napplication\u0020configuration,\u0020controller\/class\u0020and\u0020method\u0020attributes.",
+            "url": "classes/Core-ContentType-Negotiator.html"
         },                {
             "fqsen": "\\Core\\ContentType\\Xml",
             "name": "Xml",
@@ -111,6 +181,11 @@ Search.appendIndex(
             "summary": "Throw\u0020this\u0020whenever\u0020you\u0020want\u0020to\u0020redirect\u0020the\u0020current\u0020controller\u0020to\u0020a\u0020\u0022forbidden\u0022\u0020controller",
             "url": "classes/Core-StatusCode-Forbidden.html"
         },                {
+            "fqsen": "\\Core\\StatusCode\\NotAcceptable",
+            "name": "NotAcceptable",
+            "summary": "Throw\u0020this\u0020whenever\u0020you\u0020want\u0020to\u0020redirect\u0020the\u0020current\u0020controller\u0020to\u0020a\u0020\u0022forbidden\u0022\u0020controller",
+            "url": "classes/Core-StatusCode-NotAcceptable.html"
+        },                {
             "fqsen": "\\Core\\StatusCode\\NotFound",
             "name": "NotFound",
             "summary": "Throw\u0020this\u0020whenever\u0020you\u0020want\u0020to\u0020redirect\u0020the\u0020current\u0020controller\u0020to\u0020a\u0020not\u0020found\u0020controller",
@@ -141,10 +216,25 @@ Search.appendIndex(
             "summary": "Represents\u0020a\u0020CRUD\u0027able\u0020entity.",
             "url": "classes/Database-Entity.html"
         },                {
+            "fqsen": "\\Database\\EntityCache",
+            "name": "EntityCache",
+            "summary": "Handles\u0020caching\u0020of\u0020entity\u0020instances",
+            "url": "classes/Database-EntityCache.html"
+        },                {
             "fqsen": "\\Database\\EntityType",
             "name": "EntityType",
             "summary": "Class\u0020EntityType",
             "url": "classes/Database-EntityType.html"
+        },                {
+            "fqsen": "\\Database\\PrimaryKey\\UuidV4",
+            "name": "UuidV4",
+            "summary": "",
+            "url": "classes/Database-PrimaryKey-UuidV4.html"
+        },                {
+            "fqsen": "\\Database\\PrimaryKey\\UuidV7",
+            "name": "UuidV7",
+            "summary": "",
+            "url": "classes/Database-PrimaryKey-UuidV7.html"
         },                {
             "fqsen": "\\Database\\Statement",
             "name": "Statement",
@@ -161,10 +251,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Environment.html"
         },                {
-            "fqsen": "\\EventListeners\\HttpsRedirect",
-            "name": "HttpsRedirect",
+            "fqsen": "\\EventListeners\\BaseurlRedirect",
+            "name": "BaseurlRedirect",
             "summary": "",
-            "url": "classes/EventListeners-HttpsRedirect.html"
+            "url": "classes/EventListeners-BaseurlRedirect.html"
+        },                {
+            "fqsen": "\\EventListeners\\ContentSecurityPolicy",
+            "name": "ContentSecurityPolicy",
+            "summary": "",
+            "url": "classes/EventListeners-ContentSecurityPolicy.html"
         },                {
             "fqsen": "\\Http\\ConnectionError",
             "name": "ConnectionError",
@@ -184,47 +279,47 @@ Search.appendIndex(
             "fqsen": "\\Http\\Method\u003A\u003AGET",
             "name": "GET",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_GET"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003APOST",
             "name": "POST",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_POST"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003AHEAD",
             "name": "HEAD",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_HEAD"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003APUT",
             "name": "PUT",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_PUT"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003ADELETE",
             "name": "DELETE",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_DELETE"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003APATCH",
             "name": "PATCH",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_PATCH"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003ATRACE",
             "name": "TRACE",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_TRACE"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003ACONNECT",
             "name": "CONNECT",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_CONNECT"
         },                {
             "fqsen": "\\Http\\Method\u003A\u003AOPTIONS",
             "name": "OPTIONS",
             "summary": "",
-            "url": ""
+            "url": "classes/Http-Method.html#enumcase_OPTIONS"
         },                {
             "fqsen": "\\Http\\Request",
             "name": "Request",
@@ -241,6 +336,16 @@ Search.appendIndex(
             "summary": "Simple\u0020logger\u0020class.",
             "url": "classes/Logger.html"
         },                {
+            "fqsen": "\\Obj",
+            "name": "Obj",
+            "summary": "Class\u0020Obj",
+            "url": "classes/Obj.html"
+        },                {
+            "fqsen": "\\Path",
+            "name": "Path",
+            "summary": "Class\u0020Path",
+            "url": "classes/Path.html"
+        },                {
             "fqsen": "\\Registry",
             "name": "Registry",
             "summary": "Class\u0020used\u0020to\u0020hold\u0020global\u0020state\u0020objects.",
@@ -256,120 +361,10 @@ Search.appendIndex(
             "summary": "This\u0020class\u0020provides\u0020utility\u0020methods\u0020for\u0020working\u0020with\u0020URLs,\nsuch\u0020as\u0020parsing\u0020and\u0020manipulating\u0020URL\u0020components.",
             "url": "classes/Url.html"
         },                {
-            "fqsen": "\\Core\\ContentType\\ContentTypeEnum",
-            "name": "ContentTypeEnum",
-            "summary": "Enum\u0020representing\u0020different\u0020content\u0020types.",
-            "url": "classes/Core-ContentType-ContentTypeEnum.html"
-        },                {
-            "fqsen": "\\Core\\ContentType\\ContentTypeEnum\u003A\u003AHTML",
-            "name": "HTML",
-            "summary": "",
-            "url": ""
-        },                {
-            "fqsen": "\\Core\\ContentType\\ContentTypeEnum\u003A\u003AXML",
-            "name": "XML",
-            "summary": "",
-            "url": ""
-        },                {
-            "fqsen": "\\Core\\ContentType\\ContentTypeEnum\u003A\u003AJSON",
-            "name": "JSON",
-            "summary": "",
-            "url": ""
-        },                {
-            "fqsen": "\\Core\\ContentType\\ContentTypeInterface",
-            "name": "ContentTypeInterface",
-            "summary": "Interface\u0020ContentType",
-            "url": "classes/Core-ContentType-ContentTypeInterface.html"
-        },                {
-            "fqsen": "\\Core\\ContentType\\Negotiator",
-            "name": "Negotiator",
-            "summary": "Handles\u0020the\u0020negotiation\u0020of\u0020content\u0020types\u0020between\u0020request\u0020headers,\napplication\u0020configuration,\u0020controller\/class\u0020and\u0020method\u0020attributes.",
-            "url": "classes/Core-ContentType-Negotiator.html"
-        },                {
-            "fqsen": "\\Arr",
-            "name": "Arr",
-            "summary": "Class\u0020Arr\nA\u0020collection\u0020of\u0020null\u002Daware\u0020array\u0020utility\u0020functions.",
-            "url": "classes/Arr.html"
-        },                {
-            "fqsen": "\\Core\\StatusCode\\NotAcceptable",
-            "name": "NotAcceptable",
-            "summary": "Throw\u0020this\u0020whenever\u0020you\u0020want\u0020to\u0020redirect\u0020the\u0020current\u0020controller\u0020to\u0020a\u0020\u0022forbidden\u0022\u0020controller",
-            "url": "classes/Core-StatusCode-NotAcceptable.html"
-        },                {
-            "fqsen": "\\Obj",
-            "name": "Obj",
-            "summary": "Class\u0020Obj",
-            "url": "classes/Obj.html"
-        },                {
-            "fqsen": "\\Path",
-            "name": "Path",
-            "summary": "Class\u0020Path",
-            "url": "classes/Path.html"
-        },                {
             "fqsen": "\\UUID",
             "name": "UUID",
             "summary": "Represents\u0020a\u0020universally\u0020unique\u0020identifier\u0020\u0028UUID\u0029,\u0020according\u0020to\u0020RFC\u00209562.",
             "url": "classes/UUID.html"
-        },                {
-            "fqsen": "\\Database\\PrimaryKey\\UuidV4",
-            "name": "UuidV4",
-            "summary": "",
-            "url": "classes/Database-PrimaryKey-UuidV4.html"
-        },                {
-            "fqsen": "\\Database\\PrimaryKey\\UuidV7",
-            "name": "UuidV7",
-            "summary": "",
-            "url": "classes/Database-PrimaryKey-UuidV7.html"
-        },                {
-            "fqsen": "\\Partial\\FooterController",
-            "name": "FooterController",
-            "summary": "",
-            "url": "classes/Partial-FooterController.html"
-        },                {
-            "fqsen": "\\Partial\\HeaderController",
-            "name": "HeaderController",
-            "summary": "",
-            "url": "classes/Partial-HeaderController.html"
-        },                {
-            "fqsen": "\\StatusCode\\ForbiddenController",
-            "name": "ForbiddenController",
-            "summary": "Controller\u0020for\u0020paths\u0020that\u0020is\u0020inaccessible\u0020in\u0020the\u0020current\u0020environment.",
-            "url": "classes/StatusCode-ForbiddenController.html"
-        },                {
-            "fqsen": "\\StatusCode\\NotAcceptableController",
-            "name": "NotAcceptableController",
-            "summary": "",
-            "url": "classes/StatusCode-NotAcceptableController.html"
-        },                {
-            "fqsen": "\\StatusCode\\NotFoundController",
-            "name": "NotFoundController",
-            "summary": "Controller\u0020for\u0020paths\u0020that\u0020either\u0020cannot\u0020be\u0020routed.",
-            "url": "classes/StatusCode-NotFoundController.html"
-        },                {
-            "fqsen": "\\ContentSecurityPolicy\\Builder",
-            "name": "Builder",
-            "summary": "",
-            "url": "classes/ContentSecurityPolicy-Builder.html"
-        },                {
-            "fqsen": "\\Database\\EntityCache",
-            "name": "EntityCache",
-            "summary": "Handles\u0020caching\u0020of\u0020entity\u0020instances",
-            "url": "classes/Database-EntityCache.html"
-        },                {
-            "fqsen": "\\EventListeners\\ContentSecurityPolicy",
-            "name": "ContentSecurityPolicy",
-            "summary": "",
-            "url": "classes/EventListeners-ContentSecurityPolicy.html"
-        },                {
-            "fqsen": "\\Core\\Attributes\\RespondWith",
-            "name": "RespondWith",
-            "summary": "Attribute\u0020for\u0020specifying\u0020allowed\u0020content\u0020types\u0020for\u0020controllers\u0020or\u0020methods.",
-            "url": "classes/Core-Attributes-RespondWith.html"
-        },                {
-            "fqsen": "\\Core\\Context",
-            "name": "Context",
-            "summary": "Holds\u0020information\u0020about\u0020the\u0020current\u0020state\u0020of\u0020the\u0020application\nSuch\u0020as\u0020the\u0020dispatched\u0020controller\u0020class\u0020and\u0020method\u0020name.",
-            "url": "classes/Core-Context.html"
         },                {
             "fqsen": "\\",
             "name": "\\",
