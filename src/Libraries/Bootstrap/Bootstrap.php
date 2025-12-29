@@ -92,12 +92,6 @@ class Bootstrap {
 			$controllerClass = \Controller::class;
 			$className = str_replace("\\", "/", $className);
 
-			// Exclude PHPUnit-related classes
-			// Removing this line breaks tests
-			// As throwing FileNotFound causes
-			// the testsuite to fail silently
-			if (str_contains($className, 'PHPUnit')) return;
-
 			if ($className != $controllerClass && str_ends_with($className, $controllerClass)) {
 				$classFile = APP_PATH . "/Controllers/" . $className . ".php";
 			} else {
@@ -106,8 +100,6 @@ class Bootstrap {
 
 			if (file_exists($classFile) === true) {
 				require $classFile;
-			} else {
-				throw new \Core\Exception\FileNotFound(\basename($classFile));
 			}
 		});
 

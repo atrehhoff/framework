@@ -43,18 +43,15 @@ final class Router {
 		$controllerBase = $this->request->getArg(0, $defaults);
 		$methodNameBase = $this->request->getArg(1, $defaults);
 
-		$iMethodName = new MethodName($methodNameBase ?? MethodName::DEFAULT);
 		$iClassName = new ClassName($controllerBase);
 
-		// Instantiating a new ReflectionClass will call autoloader
-		// which will throw \Core\Exception\FileNotFound if file is not found
-		// class_exists(); is not used because we'll need the reflection later
-		try {
-			$iReflectionClass = new \ReflectionClass($iClassName->toString());
-		} catch (\Core\Exception\FileNotFound) {
+		if (!class_exists($iClassName->toString(), true)) {
 			$this->route = $this->handleUnroutableRequest();
 			return;
 		}
+
+		$iMethodName = new MethodName($methodNameBase ?? MethodName::DEFAULT);
+		$iReflectionClass = new \ReflectionClass($iClassName->toString());
 
 		// Check if method name exists on class
 		// If method is not present, fallback to default

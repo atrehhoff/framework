@@ -1,4 +1,10 @@
 # Changelog #
+v10.0.2
+- \Core\Router no longer relies upon FileNotFound exception.  
+- Include type of thrown exception in logged errors.  
+- Remove PHPunit guard clause for silent fails in autoloader.  
+- Updates to tooling surrounding this framework.  
+
 v10.0.1
 - Added \Str::pos(); method.  
 - Rename HttpsRedirect to BaseurlRedirect.  
