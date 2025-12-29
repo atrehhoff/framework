@@ -163,7 +163,7 @@ class Bootstrap {
 				unset($emergencyMemory);
 				gc_collect_cycles();
 
-				error_log($iException->getMessage() . " in file " . $iException->getFile() . " on line " . $iException->getLine());
+				error_log("Uncaught " . $iException::class . ": " . $iException->getMessage() . " in file " . $iException->getFile() . " on line " . $iException->getLine());
 				error_log("Stacktrace: " . LF . $iException->getTraceAsString());
 
 				if (IS_CLI) {
